@@ -5,34 +5,34 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div className='container'>
-        <div className='logo' style={{width: "50px", height: "50px", backgroundColor: "red"}}>
-          <img src='' alt=''></img>
-        </div>
+            <div className='logo' style={{ width: "50px", height: "50px", backgroundColor: "red" }}>
+                <img src='' alt=''></img>
+            </div>
             <nav>
                 <ul className='flex'>
-                    <li className=''>
-                        <Link to="/">Home</Link>
+                    <li>
+                        <Link to="/" style={{color: 'white', textDecorationLine: "none"}}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about" style={{color: 'white', textDecorationLine: "none"}}>About</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact" style={{color: 'white', textDecorationLine: "none"}}>Contact</Link>
                     </li>
                     <li>
-                        <Link to="/services">Services</Link>
+                        <Link to="/services" style={{color: 'white', textDecorationLine: "none"}}>Services</Link>
                     </li>
                     <li>
-                        <Link to="/login">Login</Link>
+                        <Link to="/signup" style={{color: 'white', textDecorationLine: "none"}}>Signup</Link>
                     </li>
                     <li>
-                        <Link to="/signup">Signup</Link>
+                        <Link to="/login" style={{color: 'white', textDecorationLine: "none"}}>Login</Link>
                     </li>
                 </ul>
             </nav>
 
             <div>
-                <input type='search' required placeholder='Enter your search'></input>
+                <input type='search' required placeholder='Enter your search' style={{width: '300px', height: "40px"}}></input>
             </div>
 
         </div>
