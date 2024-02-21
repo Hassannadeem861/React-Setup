@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <>
+        <div className='container'>
+        <div className='logo' style={{width: "50px", height: "50px", backgroundColor: "red"}}>
+          <img src='' alt=''></img>
+        </div>
             <nav>
-                <ul>
-                    <li>
+                <ul className='flex'>
+                    <li className=''>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
@@ -27,7 +31,11 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-        </>
+            <div>
+                <input type='search' required placeholder='Enter your search'></input>
+            </div>
+
+        </div>
     )
 }
 
